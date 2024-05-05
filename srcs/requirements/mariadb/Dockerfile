@@ -1,16 +1,15 @@
-# i dont know yet buster or bullseye 
-FROM debian:bullseye
+FROM debian:buster
 
-RUN apt-get update && apt-get install -y mariadb-server
+RUN apt-get update && \
+    apt-get install -y mariadb-server
+
+COPY ./conf/50-server.cnf /etc/mysql/mariadb.conf.d/
+COPY ./tools/ /tmp/
 
 EXPOSE 3306
 
-COPY ./conf/50-server.cnf /etc/mysql/mariadb.conf.d/
+RUN chmod +x /tmp/init_db.sh
 
-COPY ./tools/dbstart.sh /
+ENTRYPOINT [ "/tmp/init_db.sh" ]
 
-RUN chmod +x /dbstart.sh
-
-ENTRYPOINT [ "/dbstart.sh" ]
-
-CMD [ "mariadbd" ]
+CMD [ "mysqld" ]
