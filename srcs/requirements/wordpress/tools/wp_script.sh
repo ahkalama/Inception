@@ -12,7 +12,7 @@ sed -i "s/localhost/$MYSQL_HOSTNAME/g" wp-config-sample.php
 sed -i "s/database_name_here/$MYSQL_DB_NAME/g" wp-config-sample.php
 mv wp-config-sample.php wp-config.php
 
-wp core install --url=$DOMAIN_NAME --title=$WP_TITLE --admin_user=$WP_ROOT --admin_password=$WP_ROOT_PASSWORD --admin_email=$WP_EMAIL --allow-root
+wp core install --url=$DOMAIN_NAME --title=$WP_TITLE --admin_user=$WP_ADMIN_USR --admin_password=$WP_ADMIN_PWD --admin_email=$WP_EMAIL --allow-root
 wp user create $WP_USER $WP_USER_MAIL --role=author --user_pass=$WP_PASSWORD --allow-root
 wp theme install hestia --activate --allow-root
 
