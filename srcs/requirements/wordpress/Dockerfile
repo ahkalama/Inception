@@ -1,20 +1,19 @@
 FROM debian:bullseye
 
-RUN apt-get update && apt-get install -y \
-   php php-mysql php-fpm curl wget && \
-   curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \
-   chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp && \
-   mkdir -p var/www/html && mkdir /run/php
+RUN apt-get update && apt-get install -y php-fpm php-mysql sendmail wget
 
-COPY ./conf/www.conf /etc/php/7.3/fpm/pool.d/
-COPY ./tools/wp_script.sh /var/www/html/  
+RUN wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
+    && chmod +x wp-cli.phar \
+    && mv wp-cli.phar /usr/local/bin/wp-cli
 
 EXPOSE 9000
 
-WORKDIR /var/www/html
+COPY ./conf/www.conf /etc/php/7.4/fpm/pool.d/
 
-RUN chmod +x ./wp_script.sh
+COPY ./tools/wp.sh /
 
-ENTRYPOINT [ "./wp_script.sh" ]
+RUN chmod +x /wp.sh
 
-CMD [ "/usr/sbin/php-fpm7.3", "-F" ]
+ENTRYPOINT [ "/wp.sh" ]
+
+CMD [ "/usr/sbin/php-fpm7.4", "--nodaemonize" ]
