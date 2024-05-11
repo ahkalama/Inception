@@ -52,7 +52,7 @@ Konteynerler ve sanal makineler arasındaki temel fark, konteynerlerin bir işle
 
 ### Konteynerlerin Avantajları
 
-- Birden fazla uygulamayı tek başına çalıştırmaya izin verin
+- Birden fazla uygulamayı tek başına çalıştırmaya izin verir
 - Hafif süreçler işler
 - Ana bilgisayarın işletim sistemini kullanın
 - Hızlı başlıyor
