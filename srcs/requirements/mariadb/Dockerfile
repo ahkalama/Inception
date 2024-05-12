@@ -1,7 +1,8 @@
 # i dont know yet buster or bullseye 
 FROM debian:bullseye
 
-RUN apt-get update && apt-get install -y mariadb-server
+RUN apt-get update && \
+    apt-get install -y mariadb-server
 
 EXPOSE 3306
 
@@ -13,4 +14,4 @@ RUN chmod +x /dbstart.sh
 
 ENTRYPOINT [ "/dbstart.sh" ]
 
-CMD [ "mysqld" ]
+CMD [ "mariadbd" ]
