@@ -13,4 +13,4 @@ RUN chmod +x /dbstart.sh
 
 ENTRYPOINT [ "/dbstart.sh" ]
 
-CMD [ "mariadbd" ]
+CMD [ "mysqld" ]
