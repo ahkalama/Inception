@@ -20,4 +20,3 @@ server {
 		fastcgi_read_timeout 300s; 
 	} 
 }
-sdfsdf
