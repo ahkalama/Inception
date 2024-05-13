@@ -1,6 +1,7 @@
 ![Docker_(container_engine)_logo](https://github.com/ahkalama/Inception/assets/116187665/9709d565-62f3-4f5e-a6a4-111c6ec39116)
 
 *Turkish and English source by ahkalama*
+
 # What is Docker?
 
 Docker is a software platform designed to help developers build, share, and run modern applications. It allows you to package your application and its dependencies into a standardized unit called a container, which can be easily shared and run on any machine that has Docker installed.
@@ -9,7 +10,7 @@ Docker is a software platform designed to help developers build, share, and run 
 
 A container is a lightweight, standalone, executable package of software that includes everything needed to run an application. It consists of an entire runtime environment, including the application code, runtime, system tools, libraries, and settings. Containers are isolated from each other and from the host system, which makes them portable and easy to deploy across different environments.
 
------------
+------------
 
 ## Different VM's and Containers
 
@@ -39,7 +40,7 @@ Docker, geliştiricilerin modern uygulamalar oluşturmasına, paylaşmasına ve 
 
 Konteyner, bir uygulamayı çalıştırmak için gereken her şeyi içeren hafif, bağımsız, çalıştırılabilir bir yazılım paketidir. Uygulama kodu, çalışma zamanı, sistem araçları, kütüphaneler ve ayarlar dahil olmak üzere tüm bir çalışma zamanı ortamından oluşur. Konteynerler birbirlerinden ve ana sistemden izole edilmiştir, bu da onları taşınabilir ve farklı ortamlara dağıtımı kolay hale getirir. Konteyner'ı Image'in çalışan hali gibi düşünebiliriz.
 
------------
+------------
 
 ## Farklı Sanal Makineler ve Konteynerler
 
