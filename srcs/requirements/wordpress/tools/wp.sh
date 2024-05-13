@@ -1,3 +1,5 @@
+#!/bin/bash
+
 chown -R www-data: /var/www/*;
 chmod -R 755 /var/www/*;
 mkdir -p /run/php/;
