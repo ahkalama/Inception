@@ -1,5 +1,3 @@
-#!/bin/bash
-
 if [ ! -f $CERTIFICICATES_OUT ]; then
     openssl req \
     -newkey rsa:2048 \

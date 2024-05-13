@@ -2,8 +2,8 @@ server {
 	listen 443 ssl;
 	listen [::]:443 ssl;
 	server_name ahkalama.42.fr;
-	ssl_certificate /etc/ssl/certs/inception.crt; 
-	ssl_certificate_key /etc/ssl/private/inception.key; 
+	ssl_certificate $CERTIFICICATES_OUT;
+	ssl_certificate_key $CERTIFICICATES_KEYOUT;
 	ssl_protocols TLSv1.3;
 	root /var/www/html;
 	index index.php;
