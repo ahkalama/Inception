@@ -1,4 +1,3 @@
-# i dont know yet buster or bullseye 
 FROM debian:bullseye
 
 RUN apt-get update && \
