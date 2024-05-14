@@ -2,7 +2,7 @@
 
 *Turkish and English source by ahkalama*
 
-**Projede kullanılan terimler ve indirilen paketler güncelleme geldikçe değişiklik gösterebilir**
+- *Projede kullanılan terimler ve indirilen paketler güncelleme geldikçe değişiklik gösterebilir!*
 
 # What is Docker?
 
