@@ -46,7 +46,7 @@ Docker container'lar, Docker Image'larından çalışan örneklerdir. Docker Ima
 
 ------------
 
-## Farklı Sanal Makineler ve Konteynerler
+## Sanal Makine ve Konteyner Farkı
 
 Konteynerler ve sanal makineler arasındaki temel fark, konteynerlerin bir işletim sistemini sanallaştırmak için bir yol sunmasıdır, böylece aynı kod herhangi bir cihazda çalışabilirken, sanal makineler tüm bir makineyi donanım katmanlarına kadar sanallaştırır. Konteynerler küçük, hızlı ve taşınabilirdir çünkü her örnekte bir konuk işletim sistemi içermeleri gerekmezken, sanal makineler her örnek için işletim sisteminin tam bir kopyasını gerektirir.
 
