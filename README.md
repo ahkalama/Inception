@@ -38,7 +38,11 @@ Docker, geliştiricilerin modern uygulamalar oluşturmasına, paylaşmasına ve 
 
 # Konteyner Nedir?
 
-Konteyner, bir uygulamayı çalıştırmak için gereken her şeyi içeren hafif, bağımsız, çalıştırılabilir bir yazılım paketidir. Uygulama kodu, çalışma zamanı, sistem araçları, kütüphaneler ve ayarlar dahil olmak üzere tüm bir çalışma zamanı ortamından oluşur. Konteynerler birbirlerinden ve ana sistemden izole edilmiştir, bu da onları taşınabilir ve farklı ortamlara dağıtımı kolay hale getirir. Konteyner'ı Image'in çalışan hali gibi düşünebiliriz.
+Konteyner, bir uygulamayı çalıştırmak için gereken her şeyi içeren hafif, bağımsız, çalıştırılabilir bir yazılım paketidir. Uygulama kodu, çalışma zamanı, sistem araçları, kütüphaneler ve ayarlar dahil olmak üzere tüm bir çalışma zamanı ortamından oluşur. Konteynerler birbirlerinden ve ana sistemden izole edilmiştir, bu da onları taşınabilir ve farklı ortamlara dağıtımı kolay hale getirir.
+
+Docker konteynerleri, uygulamaların birbirleriyle ve konak işletim sistemiyle izole bir şekilde çalışmasına olanak tanır. Bu sayede, uygulamaların farklı ortamlarda (geliştirme, test, üretim) tutarlı bir şekilde çalışması sağlanır. Docker, hızlı dağıtım, ölçeklenebilirlik ve kaynak verimliliği gibi avantajlar sunar.
+
+Docker container'lar, Docker Image'larından çalışan örneklerdir. Docker Image'ları, bir uygulamanın çalışması için gerekli olan tüm bileşenleri içeren bir şablon veya pakettir. Docker Image'ları, Dockerfile adı verilen metin dosyaları aracılığıyla tanımlanır ve Docker Daemon tarafından oluşturulur. Bir Docker Image'ı, çalıştırıldığında bir Docker container oluşturulur ve bu container'lar Docker Daemon tarafından yönetilir.
 
 ------------
 
