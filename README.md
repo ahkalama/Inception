@@ -34,7 +34,7 @@ The primary difference between containers and virtual machines is that container
 
 # Docker nedir?
 
-Docker, geliştiricilerin modern uygulamalar oluşturmasına, paylaşmasına ve çalıştırmasına yardımcı olmak için tasarlanmış bir yazılım platformudur. Uygulamanızı ve bağımlılıklarını, Docker yüklü herhangi bir makinede kolayca paylaşılabilen ve çalıştırılabilen konteyner adı verilen standartlaştırılmış bir birimde paketlemenizi sağlar.
+Docker, yazılım uygulamalarını geliştirmek, dağıtmak ve çalıştırmak için kullanılan bir platformdur. Docker, bir tür konteynerleme yazılımıdır. Konteynerler, bir uygulamanın tüm gereksinimlerini (kod, çalışma zamanı, sistem araçları, kütüphaneler ve ayarlar gibi) bir araya getirerek, bağımsız ve taşınabilir bir şekilde çalışmasını sağlar. Uygulamanızı ve bağımlılıklarını, Docker yüklü herhangi bir makinede kolayca paylaşılabilen ve çalıştırılabilen konteyner adı verilen standartlaştırılmış bir birimde paketlemenizi sağlar.
 
 # Konteyner Nedir?
 
